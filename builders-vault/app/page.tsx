@@ -102,6 +102,29 @@ export default function BuildersVault() {
     </p>
   </motion.div>
 
+  {/* Lead Recovery */}
+<motion.div
+  whileHover={{ scale: 1.05 }}
+  className="bg-zinc-900 p-5 rounded-xl text-center border border-yellow-400/20"
+>
+  <div className="h-32 flex items-center justify-center text-6xl mb-4">
+    📞
+  </div>
+
+  <h2 className="text-xl font-bold">Lead Recovery</h2>
+
+  <p className="text-gray-400 text-sm mb-4">
+    Helping local service businesses stop losing customers from missed calls and slow follow-up.
+  </p>
+
+  <a
+    href="/lead-recovery"
+    className="inline-block bg-yellow-400 text-black px-4 py-2 rounded-lg font-semibold"
+  >
+    Learn More
+  </a>
+</motion.div>
+
 </div>
 
       {/* FOOTER */}
