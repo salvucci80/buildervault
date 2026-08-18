@@ -9,7 +9,7 @@ const fadeUp = {
 
 export default function Home() {
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="bg-black text-white min-h-screen flex flex-col">
 
       {/* HERO */}
       <motion.section
@@ -25,7 +25,7 @@ export default function Home() {
       </motion.section>
 
       {/* PROJECTS */}
-      <div className="grid md:grid-cols-3 gap-6 px-6 max-w-5xl mx-auto">
+      <div className="grid md:grid-cols-3 gap-6 px-6 max-w-5xl mx-auto flex-1">
 
         {/* LeadGhost */}
         <motion.div
@@ -68,6 +68,14 @@ export default function Home() {
 
       </div>
 
+      <footer className="mt-16 border-t border-zinc-800 px-6 py-8 text-center text-sm text-gray-500">
+        <div className="flex flex-wrap items-center justify-center gap-5">
+          <a href="/terms" className="transition hover:text-white">Terms of Service</a>
+          <a href="/privacy" className="transition hover:text-white">Privacy Policy</a>
+          <a href="mailto:jackie@buildersvault.com" className="transition hover:text-white">Contact</a>
+        </div>
+        <p className="mt-4">© {new Date().getFullYear()} Builder Vault. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
