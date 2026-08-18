@@ -40,9 +40,13 @@ export default function Home() {
         </motion.div>
 
         {/* FootFlirt */}
-        <motion.div
+        <motion.a
+          href="https://footflirt.app"
+          target="_blank"
+          rel="noopener noreferrer"
           whileHover={{ scale: 1.05 }}
-          className="bg-zinc-900 p-5 rounded-xl"
+          className="bg-zinc-900 p-5 rounded-xl block cursor-pointer"
+          aria-label="Visit FootFlirt"
         >
           <img src="/footflirt.png" className="h-32 mx-auto mb-4" />
           <h2 className="text-xl font-bold">FootFlirt</h2>
@@ -50,7 +54,7 @@ export default function Home() {
             A bold creator app where users post, get rated, tipped, and build
             loyal fanbases.
           </p>
-        </motion.div>
+        </motion.a>
 
         {/* TrashPanda */}
         <motion.div
